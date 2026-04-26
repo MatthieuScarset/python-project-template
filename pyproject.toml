@@ -1,0 +1,29 @@
+[project]
+name = "mypackage"
+version = "0.1.0"
+description = "Python project template"
+readme = "README.md"
+requires-python = ">=3.14"
+license = "MIT"
+dependencies = [
+    "fastapi>=0.136.1",
+    "pydantic-settings>=2.14.0",
+    "typer>=0.25.0",
+    "uvicorn>=0.46.0",
+    "httpx>=0.28.0",
+]
+
+[project.scripts]
+mypackage = "mypackage.cli:app"
+
+[tool.uv]
+package = true
+
+[dependency-groups]
+dev = [
+    "mypy>=1.0.0",
+    "pre-commit>=4.6.0",
+    "pytest>=8.0.0",
+    "pytest-cov>=5.0.0",
+    "pytest-asyncio>=0.25.0",
+]

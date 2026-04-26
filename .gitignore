@@ -1,0 +1,10 @@
+*cache
+*.egg
+*.egg-info
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.env
+.env/
+.venv/
